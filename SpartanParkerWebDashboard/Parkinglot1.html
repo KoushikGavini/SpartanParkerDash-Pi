@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Parking Lot 1 Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="spartanparker.html">Spartan Parker</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="spartanparker.html">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-right">
+        <div class="row content">
+            <!-- <div class="col-sm-2 sidenav">
+                <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas" src="https://maps.google.com/maps?q=north%20garage%20san%20jose&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.pureblack.de">pure black</a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+            </div> -->
+            <div class="col-sm-8 text-left">
+                <h1>Parking Lot 1 Dashboard</h1>
+                <p>This will contain time chart and table of all scanned cars</p>
+                <hr>
+                <h3>Time Date Graph</h3>
+                <p><iframe src="https://app.redash.io/spartanparker/embed/query/148262/visualization/254211?api_key=FVpSl79OvnBwEdaWOhO3Fx8ML7vt4hWiGaKruDJP"
+                        width="800" height="600"></iframe></p>
+                <h1>Scanned Cars: Parking lot 1</h1>
+                <iframe src="https://app.redash.io/spartanparker/embed/query/148262/visualization/254210?api_key=FVpSl79OvnBwEdaWOhO3Fx8ML7vt4hWiGaKruDJP"
+                width="800" height="500"></iframe>
+<h3>Population of Parking Lot</h3>
+<iframe src="https://app.redash.io/spartanparker/embed/query/148262/visualization/254317?api_key=FVpSl79OvnBwEdaWOhO3Fx8ML7vt4hWiGaKruDJP"
+    width="720" height="391"></iframe>
+    <h3>Invalid Cars Parked</h3>
+<iframe src="https://app.redash.io/spartanparker/embed/query/148351/visualization/254364?api_key=sYV9Et7yY3PBzYEhybvjTTcJkJipErIhwfOqNg2M"
+    width="720" height="391"></iframe>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="container-fluid text-center">
+        <p>Spartan Parker</p>
+    </footer>
+
+</body>
+
+</html>
